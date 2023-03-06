@@ -6,3 +6,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  background: url('./images/bg-intro-mobile.png'), rgba(255, 121, 121, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 934px;
+}
