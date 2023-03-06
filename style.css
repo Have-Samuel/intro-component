@@ -14,10 +14,6 @@ body {
   height: 934px;
 }
 
-header {
-  width: 327px;
-}
-
 header h1 {
   color: #fff;
   margin: 5.5rem 1.5rem 1rem 1.5rem;
@@ -54,6 +50,7 @@ header p {
   border-radius: 5px;
   margin: 0 1.5rem 1.5rem 1.5rem;
   background-color: #5e54a4;
+  cursor: pointer;
 }
 
 .choice h2 {
@@ -76,7 +73,7 @@ header p {
 }
 
 .intro__form {
-  height: 442px;
+  height: 470px;
   width: 327px;
   border-radius: 10px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
@@ -89,6 +86,7 @@ header p {
   background-color: rgba(255, 255, 255, 1);
   margin: 1.5rem 1.5rem 0 1.5rem;
   padding: 0 1rem;
+  cursor: pointer;
   height: 56px;
   width: 279px;
 }
@@ -101,4 +99,40 @@ header p {
   letter-spacing: 0.25px;
   text-align: left;
   opacity: 0.75;
+}
+
+.intro__form button {
+  cursor: pointer;
+  height: 56px;
+  width: 279px;
+  border-radius: 5px;
+  background-color: rgba(56, 204, 139, 1);
+  box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.09) inset;
+  color: #fff;
+  line-height: 26px;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+
+.intro__form button:hover {
+  background-color: rgba(56, 204, 139, 0.8);
+}
+
+.intro__form p {
+  font-weight: 400;
+  width: 249px;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: #a6a1cf;
+  margin: 0.5rem 2.4rem 1.5rem 2.4rem;
+}
+
+.intro__form p a {
+  color: rgba(255, 121, 121, 1);
+  cursor: pointer;
+  text-decoration: none;
 }
