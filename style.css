@@ -41,27 +41,31 @@ header p {
 }
 
 .form {
-  /* width: 327px; */
-  height: 60px;
-  background-color: #5e54a4;
-  border-radius: 5px;
-  margin: 0 1.5rem 1.5rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  color: #fff;
-  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
 }
 
-.form h2 {
+.choice {
+  height: 88px;
+  width: 327px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
+  border-radius: 5px;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  background-color: #5e54a4;
+}
+
+.choice h2 {
+  height: 52px;
   width: 194px;
-  font-size: 16px;
   font-weight: 700;
   line-height: 26px;
-  letter-spacing: -0.3px;
   text-align: center;
-  /* margin: 1rem 0 0 0; */
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  margin: 1.125rem 4.125rem;
 }
 
 .form h2 span {
