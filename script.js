@@ -23,8 +23,7 @@ const validate = () => {
 
   if (!firstValue) {
     heighlightError($firstInput, 'First Name cannot be empty');
-  }
-  if (!lastValue) {
+  } else if (!lastValue) {
     heighlightError($lastInput, 'Last Name cannot be empty');
   }
   if (!emailValue) {
