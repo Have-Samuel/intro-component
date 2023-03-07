@@ -242,7 +242,7 @@ header p {
     display: none;
   }
 
-  /* .error {
+  .error {
     font-size: 11px;
     font-style: italic;
     font-weight: 400;
