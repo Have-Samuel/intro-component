@@ -8,10 +8,10 @@ const $roundIcon = document.querySelector('#red-note');
 // const $input = document.getElementsByTagName('input');
 
 const heighlightError = ($input, errorMessage) => {
-  $input.parentNode.classList.add('form__field--error');
-  $roundIcon.classList.add('error');
+  $input.classList.add('form__field--error');
+  $roundIcon.style.display = 'block';
 
-  $error.nextElementSibling.innerText = errorMessage;
+  $error.innerText = errorMessage;
   console.log($error);
 };
 
@@ -23,11 +23,14 @@ const validate = () => {
 
   if (!firstValue) {
     heighlightError($firstInput, 'First Name cannot be empty');
-  } else if (!lastValue) {
+  }
+  if (!lastValue) {
     heighlightError($lastInput, 'Last Name cannot be empty');
-  } else if (!emailValue) {
+  }
+  if (!emailValue) {
     heighlightError($emailInput, 'Looks like this is not an email');
-  } else if (!passwordValue) {
+  }
+  if (!passwordValue) {
     heighlightError($passwordInput, 'Password cannot be empty');
   }
 };

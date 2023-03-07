@@ -239,11 +239,14 @@ header p {
   }
 
   .form__field--error {
-    border: 1px solid red;
     border-radius: 28px;
     margin: 0 2rem;
     height: 46px;
     width: 460px;
+  }
+
+  .form__field--error input {
+    border: 1px solid red;
   }
 
   .error-image {
