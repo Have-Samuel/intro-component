@@ -8,11 +8,11 @@ const $roundIcon = document.querySelector('#red-note');
 // const $input = document.getElementsByTagName('input');
 
 const heighlightError = ($input, errorMessage) => {
-  $input.classList.add('form__field--error');
+  $input.parentNode.classList.add('form__field--error');
   $roundIcon.style.display = 'block';
 
   $error.innerText = errorMessage;
-  console.log($error);
+  // console.log($error);
 };
 
 const validate = () => {
