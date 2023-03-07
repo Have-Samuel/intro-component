@@ -192,12 +192,14 @@ header p {
   }
 
   .intro__form {
+    position: relative;
     height: 474px;
     width: 540px;
     border-radius: 10px;
   }
 
   .intro__form input {
+    position: relative;
     height: 46px;
     width: 460px;
     border-radius: 5px;
@@ -232,4 +234,33 @@ header p {
     text-align: center;
     margin: 0.5rem 5.4rem 0 5.4rem;
   }
+
+  .error {
+    /* width: 158px; */
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: right;
+
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ff7979;
+    text-align: end;
+    margin: -1.7rem 2.5rem -1.2rem 2.5rem;
+    /* border: 1px solid #ff7979; */
+  }
+
+  .error-image {
+    position: relative;
+    left: 455px;
+    top: -35px;
+  }
+  
+  /* .round-icon {
+    position: absolute;
+    left: 245px;
+    top: 13px;
+    /* display: none; */
+  } */
 }

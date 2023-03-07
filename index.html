@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Intro Component</title>
 </head>
@@ -20,11 +20,19 @@
                 <div class="choice">
                     <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
                 </div>
-                <form action="" class="intro__form">
-                    <input type="text" placeholder="First Name">
+                <form action="" class="intro__form form-js">
+                    <input type="text"  placeholder="First Name">
+                    <img class="error-image" id="red-note" src="./images/icon-error.svg" alt="Error-Icon">
+                    <div class="error">First Name cannot be empty</div>
                     <input type="text" placeholder="Last Name">
+                    <img class="error-image" id="red-note" src="./images/icon-error.svg" alt="Error-Icon">
+                    <div class="error">Last Name cannot be empty</div>
                     <input type="email" placeholder="Email Address">
+                    <img class="error-image" id="red-note" src="./images/icon-error.svg" alt="Error-Icon">
+                    <div class="error">Looks like this is not an email</div>
                     <input type="password" placeholder="Password">
+                    <img class="error-image" id="red-note" src="./images/icon-error.svg" alt="Error-Icon">
+                    <div class="error">Password cannot be empty</div>
                     <button type="submit">CLAIM YOUR FREE TRIAL</button>
                     <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
                 </form>
