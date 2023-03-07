@@ -203,10 +203,9 @@ header p {
   }
 
   .intro__form input {
-    position: relative;
+    /* position: relative; */
     height: 46px;
     width: 460px;
-    border-radius: 5px;
     margin: 2rem 2.5rem 0 2.5rem;
   }
 

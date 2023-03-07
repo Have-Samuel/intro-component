@@ -11,7 +11,8 @@ const heighlightError = ($input, errorMessage) => {
   $input.parentNode.classList.add('form__field--error');
   $roundIcon.classList.add('error');
 
-  $error.innerText = errorMessage;
+  $error.nextElementSibling.innerText = errorMessage;
+  console.log($error);
 };
 
 const validate = () => {
