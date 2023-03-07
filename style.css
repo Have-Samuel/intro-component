@@ -133,13 +133,8 @@ header p {
   text-decoration: none;
 }
 
-.error {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #f96464;
-  margin: 0.3rem 2.5rem;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 13px;
+.error-image {
+  display: none;
 }
 
 @media (min-width: 376px) {
@@ -244,12 +239,29 @@ header p {
     margin: 0.5rem 5.4rem 0 5.4rem;
   }
 
+  .form__field--error {
+    border: 1px solid red;
+    border-radius: 28px;
+    margin: 0 2rem;
+    height: 48px;
+    width: 311px;
+  }
+
   .error-image {
     position: relative;
     left: 455px;
     top: -35px;
     display: none;
   }
+
+  /* .error {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f96464;
+    margin: 0.3rem 2.5rem;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+  } */
 
   .error {
     font-size: 11px;
