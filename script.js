@@ -12,7 +12,7 @@ const heighlightError = ($input, errorMessage) => {
   $roundIcon.style.display = ('block');
   console.log($input);
   $error.innerText = errorMessage;
-  // console.log($error);
+  console.log($error);
 };
 
 const validate = () => {
