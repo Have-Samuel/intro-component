@@ -3,15 +3,15 @@ const $firstInput = document.querySelector('.first-name-js');
 const $lastInput = document.querySelector('.last-name-js');
 const $emailInput = document.querySelector('.email-input-js');
 const $passwordInput = document.querySelector('.password-input-js');
-const $error = document.querySelector('.error-js');
-const $roundIcon = document.querySelector('#red-note');
+const $error = document.querySelectorAll('.error-js');
+const $roundIcon = document.querySelectorAll('.red-note');
 // const $input = document.getElementsByTagName('input');
 
 const heighlightError = ($input, errorMessage) => {
   $input.parentNode.classList.add('form__field--error');
   $roundIcon.style.display = 'block';
 
-  $error.innerText = errorMessage;
+  $error.lastElementChild.innerText = errorMessage;
   // console.log($error);
 };
 
