@@ -8,7 +8,7 @@ const $roundIcon = document.querySelector('.red-note');
 // const $input = document.getElementsByTagName('input');
 
 const heighlightError = ($input, errorMessage) => {
-  $input.parentNode.classList.add('form__field--error');
+  $input.parentElement.classList.add('form__field--error');
   $roundIcon.style.display = ('block');
   console.log($input);
   $error.innerText = errorMessage;
@@ -25,11 +25,9 @@ const validate = () => {
     heighlightError($firstInput, 'First Name cannot be empty');
   } else if (!lastValue) {
     heighlightError($lastInput, 'Last Name cannot be empty');
-  }
-  if (!emailValue) {
+  } else if (!emailValue) {
     heighlightError($emailInput, 'Looks like this is not an email');
-  }
-  if (!passwordValue) {
+  } else if (!passwordValue) {
     heighlightError($passwordInput, 'Password cannot be empty');
   }
 };
