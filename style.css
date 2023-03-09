@@ -41,7 +41,6 @@ header p {
 }
 
 .choice {
-  height: 88px;
   width: 327px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
   border-radius: 5px;
@@ -68,8 +67,7 @@ header p {
 }
 
 .intro__form {
-  height: 470px;
-  width: 327px;
+  /* width: 327px; */
   border-radius: 10px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
   background-color: rgba(255, 255, 255, 1);
@@ -82,7 +80,6 @@ header p {
   margin: 1.5rem 1.5rem 0 1.5rem;
   padding: 0 1rem;
   cursor: pointer;
-  -webkit-border: none;
   height: 56px;
   width: 279px;
 }
@@ -109,7 +106,6 @@ header p {
   margin: 1.5rem 1.5rem 0 1.5rem;
   font-size: 15px;
   font-weight: 600;
-  text-align: center;
   border: none;
 }
 
@@ -131,6 +127,10 @@ header p {
   color: #f13737;
   cursor: pointer;
   text-decoration: none;
+}
+
+.error-image {
+  display: none;
 }
 
 @media (min-width: 376px) {
@@ -192,16 +192,18 @@ header p {
   }
 
   .intro__form {
-    height: 474px;
+    /* position: relative; */
     width: 540px;
     border-radius: 10px;
   }
 
   .intro__form input {
-    height: 46px;
     width: 460px;
-    border-radius: 5px;
     margin: 2rem 2.5rem 0 2.5rem;
+  }
+
+  .form__field--error input {
+    border: 1px solid red;
   }
 
   .intro__form input:focus {
@@ -210,8 +212,6 @@ header p {
   }
 
   .intro__form input::placeholder {
-    height: 26px;
-    width: 104px;
     font-size: 14px;
     font-weight: 600;
     line-height: 26px;
@@ -219,7 +219,6 @@ header p {
   }
 
   .intro__form button {
-    height: 56px;
     width: 460px;
     border-radius: 5px;
     margin: 2rem 2.5rem 0 2.5rem;
@@ -231,5 +230,27 @@ header p {
     line-height: 21px;
     text-align: center;
     margin: 0.5rem 5.4rem 0 5.4rem;
+  }
+
+  .form__field--error {
+    border-radius: 28px;
+    width: 460px;
+  }
+
+  .error-image {
+    position: relative;
+    left: 460px;
+    top: -40px;
+    display: none;
+  }
+
+  .error-js {
+    color: #ff7979;
+    font-style: italic;
+    margin: -1.4rem -2.3rem -1rem 0;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: end;
   }
 }
