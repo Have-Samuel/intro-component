@@ -5,7 +5,6 @@ const $emailInput = document.querySelector('.email-input-js');
 const $passwordInput = document.querySelector('.password-input-js');
 const $error = document.querySelector('.error-js');
 const $roundIcon = document.querySelector('.red-note');
-// const $input = document.getElementsByTagName('input');
 
 const heighlightError = ($input, errorMessage) => {
   $input.parentElement.classList.add('form__field--error');
