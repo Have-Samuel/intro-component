@@ -1,17 +1,17 @@
 const $form = document.querySelector('.form-js');
 const $firstInput = document.querySelector('.first-name-js');
 const $lastInput = document.querySelector('.last-name-js');
-const $emailInput = document.querySelector('.email-input-js');
-const $passwordInput = document.querySelector('.password-input-js');
-const $error = document.querySelector('.error-js');
-const $roundIcon = document.querySelector('.red-note');
+const $emailInput = document.querySelectorAll('.email-input-js');
+const $passwordInput = document.querySelectorAll('.password-input-js');
+// const $error = document.querySelectorAll('.error-js');
+// const $roundIcon = document.querySelectorAll('.red-note');
 
 const heighlightError = ($input, errorMessage) => {
   $input.parentElement.classList.add('form__field--error');
-  $roundIcon.style.display = ('block');
+  // $roundIcon.classList.toggle('error-image');
   console.log($input);
-  $error.innerText = errorMessage;
-  console.log($error);
+  $input.nextElementSibling.innerText = errorMessage;
+  // console.log($error);
 };
 
 const validate = () => {
