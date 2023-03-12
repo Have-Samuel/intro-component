@@ -8,7 +8,7 @@ const $roundIcon = document.querySelector('.red-note');
 
 const heighlightError = ($input, errorMessage) => {
   $input.parentElement.classList.add('form__field--error');
-  $roundIcon.classList = 'block';
+  $roundIcon.classList.add('error-image');
   console.log($input);
   $error.innerText = errorMessage;
   // console.log($error);
