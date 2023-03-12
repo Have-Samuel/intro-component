@@ -1,16 +1,16 @@
 const $form = document.querySelector('.form-js');
 const $firstInput = document.querySelector('.first-name-js');
 const $lastInput = document.querySelector('.last-name-js');
-const $emailInput = document.querySelectorAll('.email-input-js');
-const $passwordInput = document.querySelectorAll('.password-input-js');
-// const $error = document.querySelectorAll('.error-js');
-// const $roundIcon = document.querySelectorAll('.red-note');
+const $emailInput = document.querySelector('.email-input-js');
+const $passwordInput = document.querySelector('.password-input-js');
+const $error = document.querySelector('.error-js');
+const $roundIcon = document.querySelector('.red-note');
 
 const heighlightError = ($input, errorMessage) => {
   $input.parentElement.classList.add('form__field--error');
-  // $roundIcon.classList.toggle('error-image');
+  $roundIcon.classList = 'block';
   console.log($input);
-  $input.nextElementSibling.innerText = errorMessage;
+  $error.innerText = errorMessage;
   // console.log($error);
 };
 
