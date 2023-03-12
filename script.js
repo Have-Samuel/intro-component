@@ -3,7 +3,7 @@ const $firstInput = document.querySelector('.first-name-js');
 const $lastInput = document.querySelector('.last-name-js');
 const $emailInput = document.querySelector('.email-input-js');
 const $passwordInput = document.querySelector('.password-input-js');
-const $error = document.querySelector('.error-js');
+const $error = document.querySelectorAll('.error-js');
 const $roundIcon = document.querySelector('.red-note');
 
 const heighlightError = ($input, errorMessage) => {
