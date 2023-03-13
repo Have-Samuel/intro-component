@@ -1,8 +1,8 @@
 const $form = document.querySelector('.form-js');
-const $firstInput = document.querySelector('.first-name-js');
-const $lastInput = document.querySelector('.last-name-js');
-const $emailInput = document.querySelector('.email-input-js');
-const $passwordInput = document.querySelector('.password-input-js');
+const $firstInput = document.querySelector('#name-fast');
+const $lastInput = document.querySelector('name-last');
+const $emailInput = document.querySelector('#slot-email');
+const $passwordInput = document.querySelector('#slot-password');
 const $error = document.querySelectorAll('.error-js');
 const $roundIcon = document.querySelector('.red-note');
 
