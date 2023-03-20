@@ -66,10 +66,14 @@ header p {
   letter-spacing: 0.3px;
 }
 
-.intro__form {
-  position: relative;
+.form__input {
+  display: block;
   margin-bottom: 10px;
   margin-top: 20px;
+}
+
+.intro__form {
+  position: relative;
   border-radius: 10px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
   background-color: rgba(255, 255, 255, 1);
