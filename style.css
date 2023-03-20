@@ -66,20 +66,42 @@ header p {
   letter-spacing: 0.3px;
 }
 
-.form__input {
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
 .intro__form {
   position: relative;
+  max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
   background-color: rgba(255, 255, 255, 1);
 }
 
-.intro__form input {
+.form__input {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.form__input i {
+  position: absolute;
+  top: 19px;
+  right: 34px;
+  color: #ff7979;
+  /* display: none; */
+}
+
+.form__input small {
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+  color: #ff7979;
+  font-style: italic;
+  /* margin: 0 -2.3rem -1rem 0; */
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17px;
+  /* display: none; */
+}
+
+.form__input input {
   display: block;
   border-radius: 5px;
   border: 1px solid rgba(70, 57, 57, 0.147);
@@ -90,7 +112,7 @@ header p {
   width: 279px;
 }
 
-.intro__form input::placeholder {
+.form__input input::placeholder {
   color: #3d3b48;
   font-size: 14px;
   font-weight: 600;
@@ -133,14 +155,6 @@ header p {
   color: #f13737;
   cursor: pointer;
   text-decoration: none;
-}
-
-.intro__form i {
-  position: absolute;
-  /* top: 0; */
-  margin-top: -2.2rem;
-  right: 34px;
-  /* display: none; */
 }
 
 @media (min-width: 376px) {
