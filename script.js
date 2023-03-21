@@ -5,13 +5,11 @@ const emailInput = document.querySelector('#email-slot');
 const passwordInput = document.querySelector('#password-slot');
 
 function setErrorFor(input, message) {
-  const formIntro = input.parentElement; // .form__input
+  const formIntro = input.parentElement;
   const small = formIntro.querySelector('small');
 
-  // add error message inside small
   small.innerText = message;
 
-  // add error class
   formIntro.className = 'form__input error';
 }
 
@@ -21,14 +19,11 @@ function validate() {
   const emailValue = emailInput.value.trim();
   const passwordValue = passwordInput.value.trim();
 
-  // Email Validation
   function isEmail(email) {
     return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
   }
 
   if (!firstValue) {
-    // show error
-    // add error class
     setErrorFor(firstInput, 'First Name cannot be empty');
   }
 
@@ -47,7 +42,6 @@ function validate() {
   }
 }
 
-// Removing The Error Message
 function removeError() {
   const formError = document.querySelectorAll('.error');
 
@@ -56,7 +50,6 @@ function removeError() {
   });
 }
 
-// reset input fields
 function resetInput() {
   form.reset();
 }
@@ -68,12 +61,3 @@ form.addEventListener('submit', (event) => {
   validate();
   resetInput();
 });
-
-// if (!firstValue) {
-// else if (!lastValue) {
-//   setErrorFor(lastInput, 'Last Name cannot be empty');
-// } else if (!emailValue) {
-//   setErrorFor(emailInput, 'Looks like this is not an email');
-// } else if (!passwordValue) {
-//   setErrorFor(passwordInput, 'Password cannot be empty');
-// }
