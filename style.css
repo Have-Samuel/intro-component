@@ -99,6 +99,7 @@ header p {
   right: 34px;
   color: #ff7979;
   visibility: hidden;
+  font-size: 20px;
 }
 
 .form__input.error i.fa-exclamation-circle {
@@ -271,6 +272,7 @@ header p {
     right: 34px;
     color: #ff7979;
     visibility: hidden;
+    font-size: 25px;
   }
 
   .form__input.error i.fa-exclamation-circle {
