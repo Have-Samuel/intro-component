@@ -3,8 +3,6 @@ const firstInput = document.querySelector('#name-fast');
 const lastInput = document.querySelector('#name-last');
 const emailInput = document.querySelector('#email-slot');
 const passwordInput = document.querySelector('#password-slot');
-// const error = document.querySelectorAll('.error-js');
-// const roundIcon = document.querySelector('.red-note');
 
 function setErrorFor(input, message) {
   const formIntro = input.parentElement; // .form__input
@@ -49,11 +47,6 @@ function validate() {
   }
 }
 
-// reset the form
-// function resetForm() {
-//   form.reset();
-// }
-
 // Removing The Error Message
 function removeError() {
   const formError = document.querySelectorAll('.error');
@@ -63,11 +56,17 @@ function removeError() {
   });
 }
 
+// reset input fields
+function resetInput() {
+  form.reset();
+}
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   removeError();
   validate();
+  resetInput();
 });
 
 // if (!firstValue) {
