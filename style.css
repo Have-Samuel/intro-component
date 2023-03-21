@@ -33,7 +33,7 @@ header p {
   margin: 0 1rem 4rem 1rem;
 }
 
-.form {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,24 +67,61 @@ header p {
 }
 
 .intro__form {
-  /* width: 327px; */
+  position: relative;
+  max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
   background-color: rgba(255, 255, 255, 1);
 }
 
-.intro__form input {
+.form__input {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.form__input input {
   border-radius: 5px;
   border: 1px solid rgba(70, 57, 57, 0.147);
   background-color: rgba(255, 255, 255, 1);
   margin: 1.5rem 1.5rem 0 1.5rem;
-  padding: 0 1rem;
+  padding: 1rem;
   cursor: pointer;
-  height: 56px;
   width: 279px;
 }
 
-.intro__form input::placeholder {
+.form__input.error input {
+  border-color: #e74c3c;
+}
+
+.form__input i {
+  position: absolute;
+  top: 43px;
+  right: 34px;
+  color: #ff7979;
+  visibility: hidden;
+}
+
+.form__input.error i.fa-exclamation-circle {
+  visibility: visible;
+}
+
+.form__input small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+  color: #ff7979;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.form__input.error small {
+  visibility: visible;
+}
+
+.form__input input::placeholder {
   color: #3d3b48;
   font-size: 14px;
   font-weight: 600;
@@ -127,10 +164,6 @@ header p {
   color: #f13737;
   cursor: pointer;
   text-decoration: none;
-}
-
-.error-image {
-  display: none;
 }
 
 @media (min-width: 376px) {
@@ -192,7 +225,7 @@ header p {
   }
 
   .intro__form {
-    /* position: relative; */
+    position: relative;
     width: 540px;
     border-radius: 10px;
   }
@@ -230,27 +263,5 @@ header p {
     line-height: 21px;
     text-align: center;
     margin: 0.5rem 5.4rem 0 5.4rem;
-  }
-
-  .form__field--error {
-    border-radius: 28px;
-    width: 460px;
-  }
-
-  .error-image {
-    position: relative;
-    left: 460px;
-    top: -40px;
-    display: none;
-  }
-
-  .error-js {
-    color: #ff7979;
-    font-style: italic;
-    margin: 0 -2.3rem -1rem 0;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: end;
   }
 }
