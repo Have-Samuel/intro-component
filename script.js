@@ -56,7 +56,6 @@ function resetInput() {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-
   removeError();
   validate();
   resetInput();

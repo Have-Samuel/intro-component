@@ -99,6 +99,7 @@ header p {
   right: 34px;
   color: #ff7979;
   visibility: hidden;
+  font-size: 20px;
 }
 
 .form__input.error i.fa-exclamation-circle {
@@ -225,18 +226,28 @@ header p {
   }
 
   .intro__form {
-    position: relative;
     width: 540px;
     border-radius: 10px;
+    position: relative;
+    max-width: 100%;
   }
 
-  .intro__form input {
-    width: 460px;
-    margin: 2rem 2.5rem 0 2.5rem;
+  .intro__form button {
+    width: 492px;
+    border-radius: 5px;
+    max-width: 100%;
   }
 
-  .form__field--error input {
-    border: 1px solid red;
+  .intro__form p {
+    width: 367px;
+    font-size: 11px;
+    line-height: 21px;
+    margin: 0.5rem 5.4rem 0.5rem 5.4rem;
+  }
+
+  .form__input input {
+    width: 492px;
+    max-width: 100%;
   }
 
   .intro__form input:focus {
@@ -251,17 +262,36 @@ header p {
     letter-spacing: 0.25px;
   }
 
-  .intro__form button {
-    width: 460px;
-    border-radius: 5px;
-    margin: 2rem 2.5rem 0 2.5rem;
+  .form__input.error input {
+    border-color: #e74c3c;
   }
 
-  .intro__form p {
-    width: 367px;
+  .form__input i {
+    position: absolute;
+    top: 43px;
+    right: 34px;
+    color: #ff7979;
+    visibility: hidden;
+    font-size: 25px;
+  }
+
+  .form__input.error i.fa-exclamation-circle {
+    visibility: visible;
+  }
+
+  .form__input small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 1.5rem;
+    color: #ff7979;
+    font-style: italic;
     font-size: 11px;
-    line-height: 21px;
-    text-align: center;
-    margin: 0.5rem 5.4rem 0 5.4rem;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  .form__input.error small {
+    visibility: visible;
   }
 }
