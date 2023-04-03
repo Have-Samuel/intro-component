@@ -122,6 +122,10 @@ header p {
   visibility: visible;
 }
 
+.placeholder {
+  color: #f13737;
+}
+
 .form__input input::placeholder {
   color: #3d3b48;
   font-size: 14px;
