@@ -47,6 +47,7 @@ function removeError() {
 
   formError.forEach((error) => {
     error.classList.remove('error');
+    emailInput.classList.add('placeholder');
   });
 }
 
