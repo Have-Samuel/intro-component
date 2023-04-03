@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [Github](https://github.com/Have-Samuel/intro-component)
-- [Live Link]()
+- [Live Link](https://intro-compo.netlify.app/)
 
 ## My process
 
